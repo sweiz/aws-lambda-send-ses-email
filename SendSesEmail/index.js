@@ -28,7 +28,7 @@ exports.handler = function (event, context) {
           return;
         } else if (
             config.validate[key].hasOwnProperty('type') && event.hasOwnProperty(key) && typeof event[key] !== config.validate[key].type
-            || config.validate[key].hasOwnProperty('regEx') && event.hasOwnProperty(key) && event[key].match(config.validate[key].regEx)
+            || config.validate[key].hasOwnProperty('regEx') && event.hasOwnProperty(key) && config.validate[key].regEx.test(event[key]))
             || config.validate[key].hasOwnProperty('fn') && event.hasOwnProperty(key) && config.validate(key)(event[key])
           ) {
           context.fail('Bad Request: Field failed validation ', key);
