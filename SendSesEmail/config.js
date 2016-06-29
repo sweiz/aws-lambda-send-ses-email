@@ -1,11 +1,14 @@
 ﻿"use strict";
 
 var config = {
-    "templateBucket" : "my-bucket",
-    "templateKey" : "Templates/Template.html",
-    "targetAddress" : "my-email@domain.com",
-    "fromAddress": "Me <my-email@domain.com>",
-    "defaultSubject" : "Email From {{name}}"
+  "awsRegion": 'ap-southeast-2a',
+  "templateBucket" : "my-bucket",
+  "templateKey" : "Templates/Template.html",
+  "targetAddress" : "my-email@domain.com",
+  "fromAddress": "Sales Inquiry <contact-form@domain.com>",
+  "defaultSubject" : "New Sales Inquiry From {{name}}",
+  "salt": "EWW_SOOO_SALTY_IT_HURTS",
+  required: ['email', 'message']
 }
 
 module.exports = config

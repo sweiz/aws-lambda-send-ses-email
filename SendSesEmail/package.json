@@ -1,15 +1,15 @@
 ﻿{
-    "name": "aws-lambda-send-ses-email",
-    "version": "0.1.4",
-    "description": "AWS Lambda function to send email through Amazon SES.",
+    "name": "metalsmith-static-captcha-aws-lambda",
+    "version": "0.0.1",
+    "description": "AWS Lambda function to validate metalsmith-static-captcha and send email via SES",
 
-    "homepage": "https://github.com/eleven41/aws-lambda-send-ses-email",
+    "homepage": "https://github.com/sweiz/metalsmith-static-captcha-aws-lambda",
     "author": {
-        "name": "Matt Houser"
+        "name": "Sweiz"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/eleven41/aws-lambda-send-ses-email.git"
+        "url": "https://github.com/sweiz/metalsmith-static-captcha-aws-lambda.git"
     },
 
     "dependencies": {
